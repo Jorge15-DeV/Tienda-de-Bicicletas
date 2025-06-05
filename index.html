@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bienvenido a mi sitio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Hola, soy Jorge 👋</h1>
-    <h2>esta es una prueba de texto</h2>
-    <p>Esta es mi primera página web publicada en GitHub Pages.</p>
-  </header>
-
-  <main>
-    <button onclick="cambiarColor()">Cambiar color de fondo</button>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Jorge - Todos los derechos reservados</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <title>Rodaditos</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="portada">
+      <h1>Rodaditos</h1>
+    </header>
+    <main>
+      <section class="opciones">
+        <button onclick="mostrarSeccion('bicicletas')">Bicicletas</button>
+        <button onclick="mostrarSeccion('coches')">Coches de Bebé</button>
+        <button onclick="mostrarSeccion('comederodebebe')">Comedero de Bebé</button>
+      </section>
+      <section id="bicicletas" class="productos ocultos">
+        <h2>Bicicletas</h2>
+        <div class="Lista-productos" id="Lista-bicis">
+          <!--aqui las bicis. como?, nose-->
+          <div class="producto">
+            <img src="https://i.pinimg.com/736x/42/20/90/422090da88b2b6b93959a58211732d61.jpg" alt="Bicicleta Infantil Roja" width="200">
+            <h3>Bicicleta Infantil Roja</h3>
+            <p>Cuadro de acero, ruedas de 16", frenos V-brake.</p>
+          </div>
+          <!--aqui terminan las bicis xd-->
+        </div>
+      </section>
+      <section id="coches" class="productos ocultos">
+        <h2>Coches</h2>
+        <div class="Lista-productos" id="Lista-cohes">
+          <!--aqui las cohes. como?, nose-->
+          <div class="producto">
+            <img src="https://i.pinimg.com/736x/38/83/73/38837372e044ad0e8435aa5e62888c89.jpg" alt="Coche de Bebé Rosa" width="200">
+            <h3>Coche de Bebé Rosa</h3>
+            <p>bolso incluido</p>
+          </div>
+          <!--aqui terminan los coches-->
+        </div>
+      </section>
+      <section id="Comedero" class="productos ocultos">
+        <h2>Comederos</h2>
+        <div class="Lista-productos" id="Lista-comederos">
+          <!--aqui los comederos. como?, nose-->
+          <div class="producto">
+            <img src="https://i.pinimg.com/736x/bf/4b/c9/bf4bc9ee6c96306a7cea156a2972c2f2.jpg" alt="Comedero de Bebé" width="200">
+            <h3>Comedero de Bebé Blanco</h3>
+            <p>Plastico reforzado, precio $100.</p>
+          </div>
+          <!--aqui terminan los coches-->
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
