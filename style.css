@@ -1,10 +1,130 @@
-*{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body{
   font-family: 'Arial', sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
+  color: #000000;
+  background-color: #8b8b8b;
+  text-align: center;
 }
+@media (max-width: 768px){
+  .producto{
+    width:90%;
+  }
+  .Lista-productos{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-portada{
+  background-image: url(https://www.somosmamas.com.ar/wp-content/uploads/2017/08/bebe-acostado-riendo.jpg);
+  background-size :cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0,0, 0.3);
+}
+.main-portada h1{
+  font-size: 60px;
+  text-shadow: 2px 2px 8px rgba(0, 0,0, 0.7);
+  margin: 0;
+}
+.opciones{
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+.opciones button{
+  width: 200px;             
+  height: 120px; 
+  padding: 20px 35px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #758191;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease,transform 0.2s ease, color 0.3s ease;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.opciones button:nth-child(1){
+  background-image: url(https://freepngimg.com/thumb/bicycle/29-bicycle-png-image.png);
+  background-size :200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.opciones button:nth-child(2){
+  background-image: url(img/yacausa.PNG);
+  background-size :100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.opciones button:nth-child(3){
+  background-image: url(img/ikea_scaun-de-masa-bebe-ikea.PNG);
+  background-size :130px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.opciones button:hover{
+  background-color: #ffc685;
+  transform: scale(1.15);
+  color:rgb(255, 255, 255);
+}
+.productos{
+  padding: 40px;
+  background-color: #fffdd0;
+  text-align: center;
+}
+.productos h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+.Lista-productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.producto{
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.producto:hover{
+  transform: scale(1.10);
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.15);
+}
+.producto img{
+  width: 100%;
+  border-radius: 8px;
+  height: 170px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.producto h3{
+  margin-top: 12px;
+  font-size: 22px;
+  font-family: 'Segoe UI',sans-serif;
+  color: #222222;
+}
+.producto p{
+  font-size: 14px;
+  color: #322f2f;
+}
+.footer{
+  background-color: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+

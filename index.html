@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="script.js"></script>
 <html lang="es">
   <head>
     <meta charset="UTF-8">
@@ -7,17 +8,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="portada">
+    <header class="main-portada">
       <h1>Rodaditos</h1>
     </header>
     <main>
       <section class="opciones">
         <button onclick="mostrarSeccion('bicicletas')">Bicicletas</button>
         <button onclick="mostrarSeccion('coches')">Coches de Bebé</button>
-        <button onclick="mostrarSeccion('comederodebebe')">Comedero de Bebé</button>
+        <button onclick="mostrarSeccion('comedero')">Comedero de Bebé</button>
       </section>
-      <section id="bicicletas" class="productos ocultos">
-        <h2>Bicicletas</h2>
+      <section id="bicicletas" class="productos">
+        <h2>Nuestras Bicicletas</h2>
         <div class="Lista-productos" id="Lista-bicis">
           <!--aqui las bicis. como?, nose-->
           <div class="producto">
@@ -25,12 +26,16 @@
             <h3>Bicicleta Infantil Roja</h3>
             <p>Cuadro de acero, ruedas de 16", frenos V-brake.</p>
           </div>
-          <!--aqui terminan las bicis xd-->
+          <div class="producto">
+            <img src="img/dd2d974b-d86b-4b72-9ef3-d8db4b3e7a86.jpg" alt="Bicicleta Infantil Roja" width="200">
+            <h3>Bicicleta Infantil Roja</h3>
+            <p>Cuadro de acero, ruedas de 16", frenos V-brake.</p>
+          </div>
         </div>
       </section>
-      <section id="coches" class="productos ocultos">
-        <h2>Coches</h2>
-        <div class="Lista-productos" id="Lista-cohes">
+      <section id="coches" class="productos">
+        <h2>Nuestros Coches</h2>
+        <div class="Lista-productos" id="Lista-coches">
           <!--aqui las cohes. como?, nose-->
           <div class="producto">
             <img src="https://i.pinimg.com/736x/38/83/73/38837372e044ad0e8435aa5e62888c89.jpg" alt="Coche de Bebé Rosa" width="200">
@@ -40,8 +45,8 @@
           <!--aqui terminan los coches-->
         </div>
       </section>
-      <section id="Comedero" class="productos ocultos">
-        <h2>Comederos</h2>
+      <section id="comedero" class="productos">
+        <h2>Nuestros Comederos</h2>
         <div class="Lista-productos" id="Lista-comederos">
           <!--aqui los comederos. como?, nose-->
           <div class="producto">
@@ -53,5 +58,8 @@
         </div>
     </main>
     <script src="script.js"></script>
+    <footer>
+      <p>© 2025 Rodaditos. Todos los derechos reservados. (JV)</p>
+    </footer>
   </body>
 </html>
