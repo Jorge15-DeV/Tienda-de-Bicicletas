@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   font-family: 'Arial', sans-serif;
   color: #000000;
   background-color: #8b8b8b;
@@ -9,7 +10,7 @@ body{
 }
 @media (max-width: 768px){
   .producto{
-    width:90%;
+    width:100%;
   }
   .Lista-productos{
     flex-direction: column;
@@ -20,7 +21,7 @@ body{
   background-image: url(https://www.somosmamas.com.ar/wp-content/uploads/2017/08/bebe-acostado-riendo.jpg);
   background-size :cover;
   background-position: center;
-  height: 200px;
+  height: 290px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,5 +126,29 @@ body{
   background-color: #ffffff;
   padding: 15px;
   font-size: 14px;
+}
+.botom-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.botom-whatsapp img {
+  width: 40px;
+  height: 40px;
+}
+
+.botom-whatsapp:hover {
+  transform: scale(1.20);
 }
 
