@@ -18,10 +18,10 @@ body{
   }
 }
 .main-portada{
-  background-image: url(https://www.somosmamas.com.ar/wp-content/uploads/2017/08/bebe-acostado-riendo.jpg);
+  background-image: url(img/extras/portada.JPG);
   background-size :cover;
   background-position: center;
-  height: 290px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +81,11 @@ body{
   background-color: #fffdd0;
   text-align: center;
 }
+.productos-bicis{
+  padding: 40px;
+  background-color: #fffdd0;
+  text-align: center;
+}
 .productos h2{
   font-size: 40px;
   margin-bottom: 20px;
@@ -108,7 +113,14 @@ body{
 .producto img{
   width: 100%;
   border-radius: 8px;
-  height: 170px;
+  height: 150;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.producto-bicis img{
+  width: 100%;
+  border-radius: 8px;
+  height: 1500px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
